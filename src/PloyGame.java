@@ -23,9 +23,11 @@ public class PloyGame extends NumberGame {
 		this.count = 0 ;
 	}
 	/**
+	 * Check the number that the user input is correct or not. 
 	 * 
-	 * @param number
-	 * @return true if the number is correct
+	 * @param number is that user guess.
+	 * 
+	 * @return true if the answer correct, and false if the answer wrong.
 	 */
 	public boolean guess(int number){
 		if( number != this.secret ){
@@ -58,12 +60,15 @@ public class PloyGame extends NumberGame {
 		return this.message;
 	}
 	
-	public int getSecret(){
-		return this.secret;
-	}
+	/**
+	 * Get the number of times that you use to guessed.
+	 */
 	public int getCount(){
 		return this.count;
 	}
+	/**
+	 * Random the secret number.
+	 */
 	public int getRandom(int upperBound){
 		// generate an unpredictable seed
 		long seed = System.nanoTime( );

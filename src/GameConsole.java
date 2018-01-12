@@ -9,7 +9,7 @@ public class GameConsole {
 	public int play(NumberGame game) {
 		Scanner console = new Scanner(System.in);
 		
-		// describe the game
+		// input answer until the answer is equal to secret number.
 		System.out.println( game.toString() );
 		int guess;
 		do{

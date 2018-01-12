@@ -14,7 +14,7 @@ public class GameSolver {
 	 * solution.
 	 *
 	 * @param game is the NumberGame to solve
-	 * @return //TODO what does it return?
+	 * @return the correct answer.
 	 */
 	 public int play(NumberGame game){
 		 System.out.println( game.toString() );
