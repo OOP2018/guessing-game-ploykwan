@@ -9,6 +9,7 @@
 public class NumberGame {
 	/** A helpful message for user. */
 	private String message;
+	private int count = 0;
 
     /** Initialize a new default game. */
     public NumberGame() {
@@ -53,7 +54,13 @@ public class NumberGame {
 	public int getUpperBound() {
 		return Integer.MAX_VALUE;  // not very helpful :-)
 	}
-    
+	/**
+	 * Get the number of times that you use to guessed.
+	 * 
+	 */
+	public int getCount(){
+		return this.count;
+	}
     /**
      * toString describes the game or problem.
      * @return description of this game or the problem to be solved.
