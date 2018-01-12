@@ -34,6 +34,8 @@ public class GameSolver {
 					num /=2 ;
 				}
 			}
+		 System.out.print("Your answer? ");
+		 System.out.println(guess);
 		 System.out.println( game.getMessage() );
 	 	return guess;
 	 }

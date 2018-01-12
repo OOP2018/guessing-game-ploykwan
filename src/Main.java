@@ -14,6 +14,6 @@ public class Main {
 		
 		System.out.println("play() returned "+solution);
 		
-		System.out.println("You guessed "+(game.getCount()+1)+" times.");
+		System.out.println("You guessed "+(game.getCount())+" times.");
 	}
 }

@@ -30,13 +30,13 @@ public class PloyGame extends NumberGame {
 	 * @return true if the answer correct, and false if the answer wrong.
 	 */
 	public boolean guess(int number){
+		this.count++;
 		if( number != this.secret ){
 			if( number > this.secret ){
 				setMessage("Sorry, too large.");
 			}else{
 				setMessage("Sorry, too small.");
 			}
-			this.count++;
 			return false;
 		}
 		else
