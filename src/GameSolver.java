@@ -18,7 +18,7 @@ public class GameSolver {
 	 */
 	 public int play(NumberGame game){
 		 System.out.println( game.toString() );
-		 int guess = 1+(game.getUpperBound()-1)/2;
+		 int guess = (1+(game.getUpperBound()-1)/2)-1;
 		 int num = guess/2;
 		 int lastguess;
 		 while(!game.guess(guess)){
