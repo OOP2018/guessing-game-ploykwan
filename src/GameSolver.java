@@ -18,12 +18,14 @@ public class GameSolver {
 	 */
 	 public int play(NumberGame game){
 		 System.out.println( game.toString() );
-		 int num = game.getUpperBound()/4;
-		 int guess = game.getUpperBound()/2;
+		 int guess = 1+(game.getUpperBound()-1)/2;
+		 int num = guess/2;
+		 int lastguess;
 		 while(!game.guess(guess)){
 				System.out.print("Your answer? ");
 				System.out.println(guess);
 				System.out.println( game.getMessage() );
+				lastguess = guess ;
 				if( game.getMessage().contains("too small")){
 					guess = guess + num;
 				}
@@ -32,6 +34,9 @@ public class GameSolver {
 				}	
 				if( num > 1){
 					num /=2 ;
+				}
+				if( lastguess == guess ){
+					guess++;
 				}
 			}
 		 System.out.print("Your answer? ");
