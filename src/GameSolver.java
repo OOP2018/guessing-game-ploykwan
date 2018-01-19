@@ -17,14 +17,10 @@ public class GameSolver {
 	 * @return the correct answer.
 	 */
 	 public int play(NumberGame game){
-		 System.out.println( game.toString() );
 		 int guess = (1+(game.getUpperBound()-1)/2)-1;
 		 int num = guess/2;
 		 int lastguess;
 		 while(!game.guess(guess)){
-				System.out.print("Your answer? ");
-				System.out.println(guess);
-				System.out.println( game.getMessage() );
 				lastguess = guess ;
 				if( game.getMessage().contains("too small")){
 					guess = guess + num;
@@ -39,9 +35,6 @@ public class GameSolver {
 					guess++;
 				}
 			}
-		 System.out.print("Your answer? ");
-		 System.out.println(guess);
-		 System.out.println( game.getMessage() );
 	 	return guess;
 	 }
 }
