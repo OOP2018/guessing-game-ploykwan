@@ -1,3 +1,4 @@
+package Game;
 /**
  * A main class for the GuessingGame.
  * It is responsible for creating objects, 
