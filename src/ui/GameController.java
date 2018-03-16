@@ -23,9 +23,9 @@ public class GameController {
 	public void handleAnswer(ActionEvent event) {
 		String text = textfield.getText().trim();
 		answer = Integer.parseInt(text);
-
-		guess.guess(answer);
+		boolean check = guess.guess(answer);
 		prompt.setText(guess.getMessage());
+		if(check == false) textfield.clear();;
 	}
 
 }
