@@ -59,16 +59,16 @@ public class GuessedView extends Stage implements Observer {
 	/** Show the window and update the counter value. */
 	public void run() {
 		stage.show();
-		displayCount(0);
+		displayNumber(0);
 	}
 	
-	public void displayCount(int number) {
+	public void displayNumber(int number) {
 		label.setText( String.format("%2d", number) );
 	}
 
 	@Override
 	public void update(Observable o, Object arg) {
 		int number = (int) arg;
-		displayCount(number);
+		displayNumber(number);
 	}	
 }

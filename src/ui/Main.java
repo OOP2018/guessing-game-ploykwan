@@ -25,7 +25,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		// Create the Counter object (the "model" part of our app)
 		//Counter counter = new Counter();
-		int upperBound = 20;
+		int upperBound = 100;
 		NumberGame game = new PloyGame(upperBound);
 		
 		try {
